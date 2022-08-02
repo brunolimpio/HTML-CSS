@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: rgb(3, 1, 29);
+        }
+        .especial::before{
+            content:'☞' ;
+
+        }
+        .especial::after{
+            content: '☜';
+            text-decoration: none;
+            font-weight: normal;
+            
+        }
+        .especial{
+            background-color: rgba(194, 72, 16, 0.295);
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://drive.google.com/drive/u/0/my-drive">Repositorio GoogleDrive</a></li>
+        <li><a href="https://www.linkedin.com/in/bruno-olimpio30/" class="especial">Canal do Linkedin</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" class="especial">Site curso em video</a></li>
+    </ul>
+</body>
+</html>
