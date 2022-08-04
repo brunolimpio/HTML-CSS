@@ -1,10 +1,22 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2? family= Square+Peg & display=swap');
+
+@import url('https://fonts.googleapis.com/css2? family= Passion+One & display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2:'Square Peg', cursiva;
+    --fonte3:'Passion One', cursiva;
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 html, body{
+    font-family: var(--fonte3);
     min-height: 100vh;
     background-color: darkgray;
 }
@@ -14,8 +26,11 @@ header{
     text-align: center;
 }
 header h1{
+    font-size: 3em;
+    font-family: var(--fonte1);
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
 }
 
 header >p{
@@ -33,10 +48,16 @@ header a:hover, footer a:hover {
 }
 
 section{
+    font-family: var(--fonte1);
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    
+}
+
+section >p{
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -47,12 +68,31 @@ section.normal{
 section.imagem{
     background-color: rgb(41, 34, 34);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.527);
+    background-size: cover;
+    background-attachment: fixed;
     
 }
 
 section.imagem > p{
     width: 400px;
     background-color: rgba(0, 0, 0, 0.438);
+    text-shadow:1px 1px 0px black ;
+
+    
+}
+
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+    
 }
 footer{
 
