@@ -16,6 +16,7 @@
     
 }
 html, body{
+    
     font-family: var(--fonte3);
     min-height: 100vh;
     background-color: darkgray;
@@ -24,13 +25,14 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+    border-radius: 10px;
 }
 header h1{
-    font-size: 3em;
-    font-family: var(--fonte1);
+    font-size: 2em;
+    font-family: var(--fonte2);
     padding-top: 50px;
     font-variant: small-caps;
-    font-size: 10vw;
+    font-size: 6vw;
 }
 
 header >p{
@@ -53,6 +55,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    border: 1px solid black;
+    border-radius: 15px;
     
 }
 
@@ -63,6 +67,7 @@ section >p{
 section.normal{
     background-color: white;
     color: black;
+    border-radius: 10px 10px 0px 0px;
 }
 
 section.imagem{
